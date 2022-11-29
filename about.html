@@ -2,89 +2,102 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Travel</title>
+        <title>about.</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
         <style>
             body {
                 margin: 0px;
                 font-family: Arial, Helvetica, sans-serif;
             }
+            h4 {
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
             header {
                 width: 100%;
-                background-color: #000;
+                background-color: white;
             }
             header ul {
-                width: 1440px;
+                width: 1880px;
+                height: 100px;
                 list-style-type: none;
-                padding: 0;
+                padding: 10px;
                 overflow: hidden;
                 margin-left:auto;
                 margin-right:auto;
-                margin-top:0px;
-                margin-bottom:0px;
+                margin-top:10px;
+                margin-bottom:10px;
             }
             header ul li {
+                width: 130px;
                 float: left;
-                height: 97px;
+                height: 60px;
             }
             header ul li a {
                 display: block;
-                color: white;
+                color: black;
                 text-align: center;
-                padding: 14px 16px;
                 text-decoration: none;
-                font-size: 22pt;
+                padding-top: 20px;
+                font-size: 20px;
+                font-family: 'Playfair Display', serif;
             }
-            header ul li:hover {
-                background-color: purple;
+            td {
+                padding-left:300px;
             }
-            header ul li:first-of-type:hover {
+            td img {
+                border-radius: 50%;
+                width:200px;
+            }
+            .hover-underline-animation {
+                display: inline-block;
+                position: relative;
+                color: black;
+            }
+            .hover-underline-animation:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 3px;
+                bottom: 0;
+                left: 0;
                 background-color: black;
+                transform-origin: bottom right;
+                transition: transform 0.25s ease-out;
             }
-            #feature {
-                background-image: url('https://cdn.britannica.com/17/118317-050-8ED46074/Mount-Pinatubo-Philippines.jpg');
-                background-size: cover;
-                height: 500px;
-                background-position: center;
+            .hover-underline-animation:hover:after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
             }
         </style>
     </head>
     <body>
         <header>
             <ul>
-                <li><a href="#"><img src="https://philippines.travel/images/dot-logo.png"></a></li>
-                <li><a href="#">See and Do</a></li>
-                <li><a href="#">Events and Festivals</a></li>
-                <li><a href="#">7641 Islands</a></li>
-                <li><a href="#">Save Our Spots</a></li>
-                <li><a href="#">Language</a></li>
-                <li><a href="#">Search</a></li>
+                <li><a href="index.html"><img style="width:100px;height:100px;" src="https://i.imgur.com/ZCP5KAH.png" alt="logo"></a></li>
+                <li class="hover-underline-animation"><a href="index.html">HOME</a></li>
+                <li class="hover-underline-animation"><a href="menu.html">MENU</a></li>
+                <li class="hover-underline-animation"><a href="#">CONTACT</a></li>
             </ul>
         </header>
-        <section id="feature">
-
-        </section>
-        <section id="">
-            <h1>Central Luzon</h1>
+        <article>
+            <h4>
+                do not approach me. at all. (please.)
+            </h4>
             <table>
                 <tr>
-                    <td>Zambales</td>
-                    <td>Tarlac</td>
-                    <td>Pampanga</td>
-                    <td>Bataan</td>
+                   <td><img src="https://i.imgur.com/tYK7pSI.jpg" alt="my wife gf everything i love her"></td>
+                   <td>
+                       <p><b>Wednesday Addams.</b><br/>
+                       donottalktome666@gmail.com<br/>
+                       <i>i like coffee and black. enid added colors. i do not like this.</i></p>
+                       <p>i do not know how to code, nor do i have an idea of what pretty is. i hope you liked it anyway. i included a lot of my personal favorites. if you try to contact and my brother answers, do not bother contacting again. goodbye.</p>
+                   </td>
                 </tr>
             </table>
-        </section>
-        <footer>
-            <h3>Extra Links</h3>
-            <ul>
-                <li><a href="#">Department of Tourism</a></li>
-                <li><a href="#">PSHS - CLC</a></li>
-                <li><a href="#">K-Hub</a></li>
-                <li><a href="#">Google Classroom</a></li>
-                <li><a href="#">Google Meet</a></li>
-                <li><a href="#">Messenger</a></li>
-                <li><a href="#">YouTube</a></li>
-            </ul>
-        </footer>
+        </article>
     </body>
 </html>
